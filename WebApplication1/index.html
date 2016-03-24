@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="scripts/MeuJavaScript.js"></script>
+</head>
+<body>
+    <div id="page" style="display:block;width:100%;height:95vh !important; overflow:hidden;">
+        <div style="display:table">
+            <div style="float:left; ">
+                <img src="infnet.jpg" />
+            </div>
+
+            <div style="float:right; margin-left:20px; ">
+                <h2>GADS2014N - Chat SignalR</h2>
+
+                <hr />
+                <h4>Grupo</h4>
+                <ul>
+                    <li>
+                        Fabio Morcillo do Nascimento
+                    </li>
+                    <li>
+                        Daniel Nazaré
+                    </li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+
+
+        <div id="divMensagem" style="display:block;height:50%;">
+            <h4 id="apelido"></h4>
+
+            <label>Mensagem:</label>
+            <input type="text" id="mensagem" style="width:300px;" />
+            <input type="button" id="btnEnviar" value="Enviar" />
+
+            <label><h4>Chat</h4></label>
+            <hr />
+            <ul id="mensagemChat" style="overflow-y: scroll;height: 100%;"></ul>
+        </div>
+    </div>
+</body>
+</html>
